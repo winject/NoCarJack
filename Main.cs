@@ -35,8 +35,8 @@ namespace NoCarJack
         /// Disable the vehicle check temporarily for this player.
         /// Allows the player to get in any vehicle, must be triggered server-side!
         /// </summary>
-        /// <param name="playerId">Targetted player ID retrieved with NETWORK_PLAYER_GET_USERID</param>
-        /// <param name="time">Time before the granted access expires </param>
+        /// <param name="playerId">Targetted player ID</param>
+        /// <param name="time">Time left before vehicle checking continues again </param>
         private void Skip(int playerId, int time)
         {
             int id = Game.Player.ServerId;

@@ -31,17 +31,17 @@ To skip a vehicle check for a player, you must trigger an event called ```nocarj
 
 **Example :** 
 
-A random player (ID : 45) can not enter police cars or steal cars without having a luck greater than 90%
- A police player (ID : 25) should be able to enter police cars at any time
+- A random player (ID : 45) can not enter police cars or steal cars without having a luck greater than 90%
+- A police player (ID : 25) should be able to enter police cars at any time
 ```
 if CheckIfNearCar(25, policecar) == true
    TriggerClientEvent('nocarjack:skipThisFrame', 25, 3500) #This will allow ID 25 to enter any car for 3.5seconds
 end
 ```
 
-**Other example :**
+**Another example :**
 
-A legit player (ID : 2) bought a new car in a vehicle shop, he should be able to enter it for the first time
+- A legit player (ID : 2) bought a new car in a vehicle shop, he should be able to enter it for the first time
 ```
 if PlayerBoughtThisCar(2, "alpha", 25000) == true #pseudo code
    TriggerClientEvent('nocarjack:skipThisFrame', 2, 10000) #This will allow ID 2 to enter his car for 10 seconds

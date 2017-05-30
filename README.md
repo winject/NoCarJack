@@ -29,12 +29,12 @@ The player's last driven vehicle is always saved, so you don't have to trigger e
 
 To skip a vehicle check for a player, you must trigger an event called ```nocarjack:skipThisFrame``` with the specified player ID. This will make him able to enter any car for x miliseconds, so make sure to check server-side if your player is near the car you want him to enter!
 
-**Example :** 
+**Example (server.lua) :** 
 
 - A random player (ID : 45) can not enter police cars or steal cars without having a luck greater than 90%
 - A police player (ID : 25) should be able to enter police cars at any time
 ```
-if CheckIfNearCar(25, policecar) == true
+if CheckIfNearCar(25, policecar) == true #pseudo code
    TriggerClientEvent('nocarjack:skipThisFrame', 25, 3500) #This will allow ID 25 to enter any car for 3.5seconds
 end
 ```

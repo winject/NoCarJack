@@ -27,4 +27,4 @@ No more random grand theft auto.
 
 ### Usage
 
-See [the wiki](https://github.com/winject/NoCarJack/wiki/Usage) for examples.
+See [the wiki](https://github.com/winject/NoCarJack/wiki/Usage) for usage and further information.

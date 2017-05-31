@@ -1,5 +1,9 @@
 # NoCarJack
 
+### Version
+
+1.0.0
+
 ### Description
 
 Yet pretty simple, but it should be efficient against the annoying NPC car-jacking and car stealing on roleplay based severs. This will force your players to find other means to reach their destination. The ability to steal cars is based on a "luck" factor.

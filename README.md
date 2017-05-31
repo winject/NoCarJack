@@ -21,7 +21,7 @@ No more random grand theft auto.
 
 ### Installation
 
-1) Download <a class="attachment" href="/uploads/default/original/2X/5/5480aba43bd4e654d2d6e7e8c76ee4d39bd11417.zip">nocarjack.zip</a> (4.7 KB) (or from the release page) and extract the content in your `resources` directory
+1) Download from [the release page](https://github.com/winject/NoCarJack/releases) and extract the content in your `resources` directory
 2) Add `- nocarjack` in your _AutoStartResources_ ( `citmp-server.yml`)
 3) Restart server
 

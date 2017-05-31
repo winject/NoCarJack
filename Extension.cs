@@ -1,4 +1,5 @@
-﻿using CitizenFX.Core;
+﻿
+using CitizenFX.Core;
 using CitizenFX.Core.Native;
 using System;
 using System.Collections.Generic;
@@ -55,5 +56,19 @@ namespace NoCarJack
             return Function.Call<Player>(Hash._NETWORK_GET_PED_PLAYER, ped);
         }
 
-    }
+        /// <summary>
+        /// Returns the real ID on the server and makes it persistent
+        /// </summary>
+        /// <param name="veh"></param>
+        /// <returns></returns>
+        public static int GetNetworkID(this Vehicle veh)
+        {
+            if(!veh.IsPersistent)
+            {
+                veh.IsPersistent = true;
+            }
+            return Function.Call<int>(Hash.NETWORK_GET_NETWORK_ID_FROM_ENTITY, veh.Handle);
+        }
+
+     }
 }
